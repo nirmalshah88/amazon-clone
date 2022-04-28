@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./Header";
 import Home from "./Home";
+import Checkout from "./Checkout";
 import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/checkout" element={<h1>I am checkout</h1>} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </div>
     </BrowserRouter>
