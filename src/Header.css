@@ -48,6 +48,16 @@
   color: white;
 }
 
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header__basketCount {
+  margin: 0 10px;
+}
+
 .header__optionLineOne {
   font-size: 10px;
 }
