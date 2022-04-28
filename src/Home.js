@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Product from "./Product.js";
+import Product from "./Product";
 
 function Home() {
   return (
@@ -31,11 +31,11 @@ function Home() {
 
         <div className="home__row">
           <Product
-            id="129357"
-            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
-            price={1099.0}
-            image="https://m.media-amazon.com/images/I/81Butfqtj5L._AC_SX425_.jpg"
-            rating={3}
+            id="9845643"
+            title="Nintendo Switch with Neon Blue and Neon Red Joy‑Con - HAC-001(-01)"
+            price={299.0}
+            image="https://m.media-amazon.com/images/I/61-PblYntsL._AC_SX355_.jpg"
+            rating={5}
           />
           <Product
             id="4957862"
@@ -55,11 +55,11 @@ function Home() {
 
         <div className="home__row">
           <Product
-            id="9845643"
-            title="Nintendo Switch with Neon Blue and Neon Red Joy‑Con - HAC-001(-01)"
-            price={299.0}
-            image="https://m.media-amazon.com/images/I/61-PblYntsL._AC_SX355_.jpg"
-            rating={5}
+            id="129357"
+            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
+            price={1099.0}
+            image="https://m.media-amazon.com/images/I/81Butfqtj5L._AC_SX425_.jpg"
+            rating={3}
           />
         </div>
       </div>
