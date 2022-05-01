@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./Product.css";
 import { useStateValue } from "./StateProvider";
 
