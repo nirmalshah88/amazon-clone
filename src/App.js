@@ -5,6 +5,8 @@ import Header from "./Header";
 import Login from "./Login";
 import Home from "./Home";
 import Checkout from "./Checkout";
+import Payment from "./Payment";
+
 import { useEffect } from "react";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
