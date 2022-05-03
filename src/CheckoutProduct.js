@@ -1,4 +1,5 @@
 import React from "react";
+import uniqid from "uniqid";
 import "./CheckoutProduct.css";
 import { useStateValue } from "./StateProvider";
 
@@ -25,7 +26,7 @@ function CheckoutProduct({ id, image, title, price, rating }) {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>⭐</p>
+              <p key={uniqid()}>⭐</p>
             ))}
         </div>
         <button onClick={removeFromBasket}>Remove from Basket</button>

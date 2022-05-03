@@ -1,3 +1,4 @@
+import uniqid from "uniqid";
 import "./Product.css";
 import { useStateValue } from "./StateProvider";
 
@@ -30,7 +31,7 @@ function Product({ id, title, image, price, rating }) {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>⭐</p>
+              <p key={uniqid()}>⭐</p>
             ))}
         </div>
       </div>

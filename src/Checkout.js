@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import FlipMove from "react-flip-move";
+import uniqid from "uniqid";
 import "./Checkout.css";
 import "./CheckoutProduct.css";
-import CheckoutProduct from "./CheckoutProduct";
 import { useStateValue } from "./StateProvider";
+import CheckoutProduct from "./CheckoutProduct";
 import Subtotal from "./Subtotal";
 
 function Checkout() {
@@ -17,11 +20,11 @@ function Checkout() {
           className="checkout__ad"
         />
         <div>
-          {/* <h3>Hello, {user?.email}</h3> */}
           <h3>Hello, {user?.email ? user.email : "Guest"}</h3>
           <h2 className="checkout__title">Your Shopping Basket</h2>
           {basket.map((item) => (
             <CheckoutProduct
+              key={uniqid()}
               id={item.id}
               title={item.title}
               image={item.image}
@@ -29,10 +32,6 @@ function Checkout() {
               rating={item.rating}
             />
           ))}
-          {/* Checkout Product */}
-          {/* Checkout Product */}
-          {/* Checkout Product */}
-          {/* Checkout Product */}
         </div>
       </div>
       <div className="checkout__right">
