@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import FlipMove from "react-flip-move";
+// import FlipMove from "react-flip-move";
 import uniqid from "uniqid";
 import "./Checkout.css";
 import "./CheckoutProduct.css";
