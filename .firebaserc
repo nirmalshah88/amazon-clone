@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "clone-2be8a"
-  }
+    "default": "clone-86285",
+    "amazon-clone": "clone-86285"
+  },
+  "targets": {}
 }
